@@ -1,0 +1,27 @@
+{
+	"info": {
+		"_postman_id": "8c8e4d52-e8e9-4ec6-9d16-da5c63977f0d",
+		"name": "WebRep",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{webrep}}/users",
+					"host": [
+						"{{webrep}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
