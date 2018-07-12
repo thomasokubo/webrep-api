@@ -1,7 +1,7 @@
 package com.repnation.webrep.service;
 
 import com.repnation.webrep.domain.model.User;
-import com.repnation.webrep.domain.repository.UserRepository;
+import com.repnation.webrep.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

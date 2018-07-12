@@ -1,4 +1,4 @@
-package com.repnation.webrep.domain.repository;
+package com.repnation.webrep.repository;
 
 import com.repnation.webrep.domain.model.User;
 import org.springframework.data.repository.CrudRepository;
