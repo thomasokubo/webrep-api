@@ -16,6 +16,10 @@ public class User {
     public User() {
     }
 
+    public Long getId() {
+        return id;
+    }
+
     public User(String name) {
         this.name = name;
     }
