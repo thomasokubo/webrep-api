@@ -5,6 +5,8 @@ import com.repnation.webrep.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @RestController
@@ -29,4 +31,8 @@ public class UserController {
         return userService.findById(id);
     }
 
+    @PostMapping
+    public void addNewUser(@RequestBody @NotNull User user) {
+        userService.save(user);
+    }
 }
