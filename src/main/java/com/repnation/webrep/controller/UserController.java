@@ -5,7 +5,6 @@ import com.repnation.webrep.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 
@@ -23,12 +22,12 @@ public class UserController {
 
     @GetMapping
     public List<User> getUsers() {
-        return userService.getUsers();
+        return userService.findAll();
     }
 
     @GetMapping(value = "/{id}")
     public User getUserById(@PathVariable Long id) {
-        return userService.findById(id);
+        return userService.findById(id).orElse(null);
     }
 
     @PostMapping
