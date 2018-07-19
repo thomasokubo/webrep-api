@@ -22,6 +22,74 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "GET User by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{webrep}}/users/1",
+					"host": [
+						"{{webrep}}"
+					],
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST New User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Marlon\"\n\t\n}"
+				},
+				"url": {
+					"raw": "{{webrep}}/users",
+					"host": [
+						"{{webrep}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Trash Entry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"date\" : \"2018-7-11\"\n}"
+				},
+				"url": {
+					"raw": "{{webrep}}/users/{id}/trash",
+					"host": [
+						"{{webrep}}"
+					],
+					"path": [
+						"users",
+						"{id}",
+						"trash"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
