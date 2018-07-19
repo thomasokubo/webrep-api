@@ -28,7 +28,7 @@ $ java -jar target/webrep-{VERSION}-SNAPSHOT.jar
 Where VERSION is the current application vestion.
 ### Documentation
 
-You can check the documentation generated with [Swagger] accessing `http://localhost:8080swagger-ui.html`
+You can check the documentation generated with [Swagger] accessing `http://localhost:8080/swagger-ui.html`
 
    [Spring Initializr]: <https://start.spring.io/>
    [Swagger]: <https://swagger.io/>
