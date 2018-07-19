@@ -1,6 +1,8 @@
 package com.repnation.webrep.domain.model;
 
 
+import io.swagger.annotations.ApiModelProperty;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -13,11 +15,14 @@ public class User {
 
     @Id
     @GeneratedValue
+    @ApiModelProperty(notes = "The auto generated user ID")
     private Long id;
 
+    @ApiModelProperty(notes = "The name of the user")
     private String name;
 
     @OneToMany(mappedBy = "user")
+    @ApiModelProperty(notes = "The list containing the information of when the user took the trash out")
     private Set<TrashEntry> trashEntries;
 
     public User() {
